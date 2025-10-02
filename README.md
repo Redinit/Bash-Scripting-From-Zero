@@ -1,4 +1,6 @@
-# Bash From Zero 🚀
+# Bash-Sripting From Zero 🚀
+
+![Bash IMage](./Images/bash.jpg)
 
 This repository documents my journey of learning **Bash scripting from scratch**.  
 It contains topic-wise notes, hands-on script examples, weekend learning logs, and challenge solutions — starting from the very basics and moving toward advanced Bash scripting.  
