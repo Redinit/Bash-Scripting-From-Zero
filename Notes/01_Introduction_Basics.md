@@ -1,7 +1,7 @@
 # Introduction to Bash Scripting 🚀
 
 
-> “Warning: May contain bugs.” 🐞💥
+
 
 Welcome to my **Bash scripting journey**! This guide will walk you through the essentials of Bash, including what is shell, why writing scripts, using the shebang line, managing file permissions and how executing scripts.
 
