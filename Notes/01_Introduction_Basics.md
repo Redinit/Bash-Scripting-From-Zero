@@ -114,7 +114,7 @@ There are **two ways to run the scripts**:
 git clone https://github.com/Redinit/bash-from-zero.git
 cd bash-from-zero/scripts/01_introduction_basics
 chmod +x hello_world.sh   # first time only
-./hello_bash.sh
+./hello_world.sh
 ```
 2. **If you only downloaded a single script file**:
 ```bash
