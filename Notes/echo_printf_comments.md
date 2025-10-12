@@ -1,4 +1,4 @@
-#  Week 2 — Echo, Printf, and Comments
+#   Echo, Printf, and Comments
 
 In Week 2, we’ll learn how to **print text**, **format outputs**, and **add comments** to explain scripts clearly.  
 These are the foundation of making our Bash scripts readable and professional.
