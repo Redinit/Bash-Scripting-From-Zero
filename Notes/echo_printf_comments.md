@@ -21,7 +21,9 @@ In Bash scripting, we use two main commands to display output:
 `echo` is the easiest way to display text or messages on the terminal.
 
 ###  Syntax
+```bash
 echo [option] [string]
+```
 
 ### Example Script
 
@@ -68,7 +70,9 @@ printf provides more control than echo.
 It doesn’t add a newline automatically and supports format specifiers (like in C language).
 
 ### Syntax
+```bash
 printf "format" arguments
+```
 
 ### Example Script
 
