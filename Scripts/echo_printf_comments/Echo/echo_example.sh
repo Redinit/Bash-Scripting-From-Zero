@@ -8,7 +8,7 @@
 # A Simple User Info Display Script
 
 # print header with color 
-echo -e "\033[1;34========== USER INFORMATION ==========\033[0m"
+echo -e "\033[1;34m========== USER INFORMATION ==========\033[0m"
 
 # ask for user input
 echo -e "Enter Your Name: "
