@@ -11,10 +11,10 @@
 echo -e "\033[1;34m========== USER INFORMATION ==========\033[0m"
 
 # ask for user input
-echo -e "Enter Your Name: "
+echo -n -e "Enter Your Name: "
 read name
 
-echo -e "Enter Your Role: "
+echo -n -e "Enter Your Role: "
 read role
 
 # print formated user info with tab spacing and color 
