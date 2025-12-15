@@ -1,33 +1,33 @@
-# Introduction to Bash Scripting 🚀
+# Introduction to Bash Scripting 
 
 
 
 
-Welcome to my **Bash scripting journey**! This guide will walk you through the essentials of Bash, including what is shell, why writing scripts, using the shebang line, managing file permissions and how executing scripts.
+This guide introduces Bash scripting fundamentals, including what a shell is, why scripts are used, the shebang line, file permissions, and how scripts are executed.
 
 ---
 
-## 🖥️ What is Bash?
+##  What is Bash?
 
 - **Bash** stands for **Bourne Again SHell**
 - It is a command-line interpreter (CLI) that allows you to interact with the operating system.
 - Acts as an intermediary between the user and the OS, allowing execution of commands and programs without a GUI
-- Offers power and flexibility for task automation, combining commands, and writing scripts
+- It offers power and flexibility for task automation, combining commands, and writing scripts
 
 ---
 
-## 📂 Understanding Shells
+##  Understanding Shells
 
 A **shell** enables you to:
 - Execute programs
 - Run system commands
 - Manage files and processes
 
-A **shell** is an intermediary between the user and the OS kernel, enabling execution of commands and programs without using a GUI.
+A **shell** is an intermediary between the user and the os, invoking programs and system calls (directly or indirectly) to interact with the kernel.
 
 ---
 
-## 📝 Bash Scripts
+##  Bash Scripts
 A **script** is simply a text file containing one or more commands.
 
 Bash scripts can include **programming features** like:
@@ -40,24 +40,33 @@ Scripts allow us to **automate tasks**, reduce manual effort, and improve consis
 
 ---
 
-## ⚡ The Shebang Line (`#!/bin/bash`)
+##  The Shebang Line (`#!/bin/bash`)
 
 Most Bash scripts begin with a shebang line:
 
 ```bash
 #!/bin/bash
 ```
-This tells the operating system which interpreter to use when running the script.
+
+```bash
+#!/usr/bin/env bash
+```
+- `#!/bin/bash`          : poor portability because different systems can have interpreters installed in different locations
+- `#!/usr/bin/env bash`  : more portability because we don't have to write the absolute path to an interpreter, env finds Bash in $PATH
+
+This tells the os which interpreter to use when running the script.
 ### Examples in Other Languages
 | Language | Shebang              |
 |----------|----------------------|
 | Python   | `#!/usr/bin/python3` |
 | Perl     | `#!/usr/bin/perl`    |
 
-### 💡 Why it matters:
+###  Why it matters:
 
    * When we run ./script.sh, the OS checks the shebang to determine how to execute the script
    * If we run bash script.sh, the shebang is ignored because Bash is explicitly invoked
+
+If the shebang is missing or incorrect, the script may run with the wrong shell, causing unexpected behavior or syntax errors.
 
 ## File Permissions in Linux
 
@@ -83,7 +92,7 @@ chmod +x scriptname.sh
 bash scriptname.sh
 ```
 
-## 🚀 Running Bash Scripts
+##  Running Bash Scripts
 
 There are two common methods to run a Bash script:
 1. Direct Execution (requires execute permission):
@@ -96,6 +105,18 @@ chmod +x scriptname.sh # give execute permission to the script
 ```bash
 bash scriptname.sh           # run script by specifying the interpreter (bash)
 ```
+
+## How Bash Scripts Are Executed ?
+When a script is executed, the os:
+
+- Checks execute permission
+
+- Reads the shebang
+
+- Passes the script to the specified interpreter
+
+- The interpreter reads and executes commands line by line
+
 
 ## Example Scripts
 
