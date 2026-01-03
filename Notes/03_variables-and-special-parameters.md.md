@@ -27,7 +27,7 @@ echo "${my_var}"
 # OR
 echo "$my_var"
 ```
- * use quotes to variables to avoid problems with spaces
+ * use quotes to prevent from word splitting
 
  While `echo "$my_var"` works, using **braces** `${my_var}` is best practice. The braces tell Bash exactly where the variable name ends, preventing errors when concatenating variables with other text.
 
